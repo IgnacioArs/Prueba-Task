@@ -1,0 +1,6 @@
+.color-background-page {
+    background: #141313;
+    height: 100vh; /* Ocupa el 100% del alto de la ventana del navegador */
+    width: 100%; /* Ocupa el 100% del ancho */   
+    border-radius: 5px;
+}

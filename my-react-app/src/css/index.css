@@ -1,0 +1,290 @@
+/* Global Container */
+.container {
+  background: #141313;
+  height: 100vh; 
+  width: 100%; 
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: center; 
+  padding: 20px;
+}
+
+/* Title Box */
+.box-title {
+  width: 100%;
+  background-color: #0f0c0ce5;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Header Box */
+.box-header {
+  width: 100%;
+  background-color: #0f0c0ce5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.input-wrapper {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.textInputWrapper {
+  width: 100%;
+}
+
+.textInput {
+  width: 100%;
+  padding: 12px;
+  background-color: #252525;
+  border: none;
+  border-radius: 4px;
+  color: #e8e8e8;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.textInput:focus {
+  background-color: #353535;
+  outline: none;
+}
+
+button {
+  background: #fbca1f;
+  color: #141313;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-left: 15px;
+}
+
+button:hover {
+  background-color: #f0b400;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #f0a300;
+  transform: scale(1);
+}
+
+/* Body Box (Tasks Section) */
+.box-body {
+  width: 100%;
+  background-color: #fbca1f;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.card {
+  width: 290px;
+  background-color: #2c2c2c;
+  color: white;
+  border-radius: 12px;
+  margin: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card__title {
+  padding: 15px;
+  background-color: #444;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card__data {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #444;
+  border-left: 1px solid #444;
+  border-right: 1px solid #444;
+}
+
+.card__left, .card__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item {
+  padding: 5px;
+  background-color: #353232;
+  border-radius: 4px;
+  margin: 5px 0;
+}
+
+.item:nth-child(even) {
+  background-color: #000000;
+}
+
+.item-volver, .item-siguiente, .item-eliminar {
+  padding: 5px;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.item-volver:hover, .item-siguiente:hover, .item-eliminar:hover {
+  background-color: #388e3c;
+}
+
+.item-eliminar {
+  background-color: #f44336;
+}
+
+.item-eliminar:hover {
+  background-color: #d32f2f;
+}
+
+/* Box for Database */
+.box-body-db {
+  width: 100%;
+  background-color: #141313;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+.card__title-db {
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card__data-db {
+  background-color: #2c2c2c;
+  color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-db {
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin: 5px 0;
+}
+
+.item-db:nth-child(even) {
+  background-color: #e6e6e6;
+}
+
+/* Input Update */
+.textInputWrapperUpdate {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.textInputUpdate {
+  width: 100%;
+  padding: 12px;
+  background-color: #252525;
+  border: none;
+  border-radius: 4px;
+  color: #e8e8e8;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.textInputUpdate:focus {
+  background-color: #353535;
+  outline: none;
+}
+
+button-update {
+  background: #fbca1f;
+  color: #141313;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button-update:hover {
+  background-color: #f0b400;
+  transform: scale(1.05);
+}
+
+button-update:active {
+  background-color: #f0a300;
+  transform: scale(1);
+}
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 768px) {
+  .box-header {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .input-wrapper {
+      width: 100%;
+      justify-content: center;
+  }
+
+  .box-body {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .card {
+      width: 100%;
+      margin: 10px 0;
+  }
+
+  button, button-update {
+      width: 100%;
+      margin-top: 10px;
+  }
+}
