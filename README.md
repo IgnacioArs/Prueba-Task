@@ -32,6 +32,7 @@ Este proyecto es una aplicación para gestionar tareas, implementada con **Expre
 
 ### Clonar el Repositorio
 
-```bash
-git clone https://github.com/tu-usuario/tu-repositorio.git
-cd tu-repositorio
+```bash - ** Utilizar! **:
+git clone https://github.com/IgnacioArs/Prueba-Task.git
+cd express-ms -> npm install -> npm run start
+cd my-react-app -> npm install -> npm run dev
